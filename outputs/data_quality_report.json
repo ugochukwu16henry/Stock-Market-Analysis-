@@ -1,0 +1,137 @@
+{
+  "raw_shape": [
+    91648,
+    8
+  ],
+  "cleaned_shape": [
+    91648,
+    8
+  ],
+  "missing_values_cleaned": {
+    "Date": 0,
+    "Open": 0,
+    "High": 0,
+    "Low": 0,
+    "Close": 0,
+    "Volume": 0,
+    "Ticker": 0,
+    "Index_Name": 0
+  },
+  "ticker_count": 14,
+  "date_min": "2000-01-03",
+  "date_max": "2026-03-25",
+  "volume_limited_tickers": [
+    "000001.SS",
+    "^AXJO",
+    "^BSESN",
+    "^BVSP",
+    "^FCHI",
+    "^FTSE",
+    "^GDAXI",
+    "^GSPC",
+    "^GSPTSE",
+    "^HSI",
+    "^KS11",
+    "^N225"
+  ],
+  "per_ticker_summary": [
+    {
+      "Ticker": "000001.SS",
+      "rows": 6347,
+      "start_date": "2000-01-04",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 750
+    },
+    {
+      "Ticker": "^AXJO",
+      "rows": 6627,
+      "start_date": "2000-01-04",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 4438
+    },
+    {
+      "Ticker": "^BSESN",
+      "rows": 6467,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 887
+    },
+    {
+      "Ticker": "^BVSP",
+      "rows": 6498,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 1714
+    },
+    {
+      "Ticker": "^DJI",
+      "rows": 6596,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 0
+    },
+    {
+      "Ticker": "^FCHI",
+      "rows": 6704,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 1292
+    },
+    {
+      "Ticker": "^FTSE",
+      "rows": 6626,
+      "start_date": "2000-01-04",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 1
+    },
+    {
+      "Ticker": "^GDAXI",
+      "rows": 6660,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 13
+    },
+    {
+      "Ticker": "^GSPC",
+      "rows": 6596,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 1
+    },
+    {
+      "Ticker": "^GSPTSE",
+      "rows": 6588,
+      "start_date": "2000-01-04",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 7
+    },
+    {
+      "Ticker": "^HSI",
+      "rows": 6462,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 379
+    },
+    {
+      "Ticker": "^IXIC",
+      "rows": 6596,
+      "start_date": "2000-01-03",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 0
+    },
+    {
+      "Ticker": "^KS11",
+      "rows": 6458,
+      "start_date": "2000-01-04",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 1
+    },
+    {
+      "Ticker": "^N225",
+      "rows": 6423,
+      "start_date": "2000-01-04",
+      "end_date": "2026-03-25",
+      "zero_volume_rows": 610
+    }
+  ]
+}
