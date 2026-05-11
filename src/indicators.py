@@ -39,6 +39,7 @@ def add_rsi(df: pd.DataFrame, window: int = 14) -> pd.DataFrame:
     out = df.copy()
 
     def _rsi(series: pd.Series) -> pd.Series:
+        """Compute RSI series from a close-price series."""
         delta = series.diff()
         gain = delta.clip(lower=0)
         loss = -delta.clip(upper=0)
@@ -61,6 +62,7 @@ def add_macd(
     out = df.copy()
 
     def _ema(series: pd.Series, span: int) -> pd.Series:
+        """Compute exponential moving average for a given span."""
         return series.ewm(span=span, adjust=False).mean()
 
     fast_ema = out.groupby("Ticker")["Close"].transform(lambda s: _ema(s, fast))

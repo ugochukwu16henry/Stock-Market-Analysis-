@@ -21,6 +21,7 @@ from .visualizations import (
 
 
 def _load_clean_or_raw(input_path: Path, output_dir: Path) -> pd.DataFrame:
+    """Load cleaned data if available; otherwise load raw input and clean it."""
     cleaned_path = output_dir / "cleaned_market_data.csv"
     if cleaned_path.exists():
         df = pd.read_csv(cleaned_path, parse_dates=["Date"])
@@ -31,6 +32,7 @@ def _load_clean_or_raw(input_path: Path, output_dir: Path) -> pd.DataFrame:
 
 
 def cmd_clean_data(args: argparse.Namespace) -> None:
+    """CLI command: clean source data and write quality artifacts."""
     input_path = Path(args.input)
     output_dir = Path(args.output)
 
@@ -44,6 +46,7 @@ def cmd_clean_data(args: argparse.Namespace) -> None:
 
 
 def cmd_run_analysis(args: argparse.Namespace) -> None:
+    """CLI command: compute features, summary statistics, and correlation matrix."""
     input_path = Path(args.input)
     output_dir = Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -73,6 +76,7 @@ def cmd_run_analysis(args: argparse.Namespace) -> None:
 
 
 def cmd_plot_all(args: argparse.Namespace) -> None:
+    """CLI command: generate dashboard and ticker-level visualizations."""
     input_path = Path(args.input)
     output_dir = Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -129,6 +133,7 @@ def cmd_plot_all(args: argparse.Namespace) -> None:
 
 
 def cmd_full_pipeline(args: argparse.Namespace) -> None:
+    """CLI command: run cleaning, analysis, and plotting in sequence."""
     clean_args = argparse.Namespace(input=args.input, output=args.output)
     run_args = argparse.Namespace(
         input=args.input,
@@ -161,6 +166,7 @@ def cmd_full_pipeline(args: argparse.Namespace) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build and return the command-line parser for all supported commands."""
     parser = argparse.ArgumentParser(description="Stock Market Analysis CLI")
     parser.add_argument("--input", default=str(DEFAULT_DATA_PATH), help="Path to input CSV dataset")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT_DIR), help="Output directory")
@@ -206,6 +212,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    """Parse CLI arguments and dispatch execution to the selected command."""
     parser = build_parser()
     args = parser.parse_args()
     args.func(args)
