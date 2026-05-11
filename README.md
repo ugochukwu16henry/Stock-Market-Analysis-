@@ -64,6 +64,28 @@ After running `full-pipeline`, expected outputs include:
 - `outputs/dashboard_combined.png`
 - ticker-specific moving average, volatility, and RSI/MACD charts
 
+## Outcome Preview
+
+### Combined Dashboard
+
+![Combined Dashboard](outputs/dashboard_combined.png)
+
+### Normalized Price Performance
+
+![Normalized Prices](outputs/normalized_prices.png)
+
+### Correlation Heatmap
+
+![Correlation Heatmap](outputs/correlation_heatmap.png)
+
+### Example Ticker Plots (BSESN)
+
+![BSESN Moving Averages](outputs/moving_averages_BSESN.png)
+
+![BSESN Volatility](outputs/volatility_BSESN.png)
+
+![BSESN RSI and MACD](outputs/rsi_macd_BSESN.png)
+
 ## Notes
 
 - Some tickers may contain zero volume rows. The dataset is retained, but volume-based interpretation should be treated carefully.
