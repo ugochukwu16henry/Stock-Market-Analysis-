@@ -64,6 +64,12 @@ After running `full-pipeline`, expected outputs include:
 - `outputs/dashboard_combined.png`
 - ticker-specific moving average, volatility, and RSI/MACD charts
 
+## Key Findings
+
+- Dataset coverage: 14 global indices
+- Date range analyzed: 2000-01-03 to 2026-03-25
+- Top 3 indices by latest cumulative return: ^BSESN (13.0041), ^BVSP (9.9524), ^KS11 (4.3277)
+
 ## Outcome Preview
 
 ### Combined Dashboard
