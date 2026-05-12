@@ -2,6 +2,10 @@
 
 This project analyzes historical global stock index data using Python, Pandas, NumPy, and Matplotlib.
 
+## YouTube Demo
+
+- Video walkthrough: https://youtu.be/Mrqvzl7RJHQ
+
 ## Features
 
 - Data loading and cleaning from CSV
