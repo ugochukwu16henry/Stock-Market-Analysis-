@@ -24,6 +24,40 @@ My purpose for writing this software was to learn how to transform raw financial
 - Question: What visual outputs were produced?
 	Answer: Combined dashboard, normalized performance chart, correlation heatmap, and ticker-level moving average, volatility, and RSI/MACD charts.
 
+# Outcome Pictures
+
+## Combined Dashboard
+
+![Combined Dashboard](outputs/dashboard_combined.png)
+
+This dashboard provides a single-page summary of long-term performance, cross-index relationship patterns, and trend/risk behavior.
+
+## Normalized Price Performance
+
+![Normalized Prices](outputs/normalized_prices.png)
+
+This chart compares all indices on the same starting scale, making long-run growth differences easy to see.
+
+## Correlation Heatmap
+
+![Correlation Heatmap](outputs/correlation_heatmap.png)
+
+This heatmap shows how similarly index returns move together, helping identify diversification opportunities.
+
+## Example Ticker Visuals (BSESN)
+
+![BSESN Moving Averages](outputs/moving_averages_BSESN.png)
+
+The moving-average chart highlights short-term and long-term trend direction for BSESN.
+
+![BSESN Volatility](outputs/volatility_BSESN.png)
+
+The volatility chart tracks periods of higher and lower market risk over time.
+
+![BSESN RSI and MACD](outputs/rsi_macd_BSESN.png)
+
+The RSI and MACD chart provides momentum and trend-strength signals often used in technical analysis.
+
 # Development Environment
 
 Tools used to develop this software:
