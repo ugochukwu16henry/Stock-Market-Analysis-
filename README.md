@@ -24,6 +24,17 @@ My purpose for writing this software was to learn how to transform raw financial
 - Question: What visual outputs were produced?
 	Answer: Combined dashboard, normalized performance chart, correlation heatmap, and ticker-level moving average, volatility, and RSI/MACD charts.
 
+# Requirements Met
+
+- Data collection and processing: The application loads the CSV dataset, converts dates and numeric columns, removes invalid rows, drops duplicates, and sorts records by ticker and date.
+- Data analysis: The software calculates daily returns, cumulative returns, moving averages, volatility, RSI, MACD, summary statistics, and return correlations.
+- Data visualization: The project generates a combined dashboard, normalized price chart, correlation heatmap, moving-average plots, volatility plots, and RSI/MACD plots.
+- Programming skills: The project uses Python with Pandas, NumPy, Matplotlib, Seaborn, and Pytest to build a reusable and testable analysis workflow.
+- Filter operation: The code filters rows by ticker when generating ticker-specific charts and when summarizing selected subsets.
+- Sort operation: Cleaned data is sorted by ticker and date before analysis.
+- Aggregate operation: The project uses count, min, max, mean, standard deviation, and grouped summary calculations to compare indices.
+- Data conversion: The project converts Date values with `to_datetime` and OHLCV fields with `to_numeric` before analysis.
+
 # Outcome Pictures
 
 ## Combined Dashboard
